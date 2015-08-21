@@ -1,0 +1,32 @@
+.carousel {
+  width: 800px;
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel .tray {
+  height: 600px;
+  position: relative;
+}
+  
+.carousel .slide {
+  float: left;
+  width: 800px;
+  height: 600px;
+}
+
+.carousel .slide img, .carousel .slide iframe, .carousel .slide table, .carousel .slide video, .carousel .slide audio {
+  width: 100%;
+  max-width: 100%;
+}
+
+.carousel .prev, .carousel .next {
+  position: absolute;
+  top: 49%;
+}
+.carousel .prev { left: 0; }
+.carousel .next { right: 0; }
+
+
+
