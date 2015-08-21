@@ -7,6 +7,11 @@ $(function(){
 
   $('.tray').width(numOfSlides * slideWidth);
 
+  function animateTray() {
+    var distance = slidePos * slideWidth;
+    $('.tray').animate({right: distance}, speed);
+  }
+
   $('.next').click(function(event){
     event.preventDefault();
     if (slidePos < numOfSlides - 1) {
@@ -14,8 +19,7 @@ $(function(){
     } else {
       slidePos = 0;
     }
-    var distance = slidePos * slideWidth;
-    $('.tray').animate({right: distance}, speed);
+    animateTray();
   });
 
   $('.prev').click(function(event){
@@ -25,7 +29,6 @@ $(function(){
     } else {
       slidePos = numOfSlides - 1;
     }
-    var distance = slidePos * slideWidth;
-    $('.tray').animate({right: distance}, speed);
+    animateTray();
   });
 });
