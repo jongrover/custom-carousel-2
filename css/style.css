@@ -6,11 +6,10 @@
 }
 
 .tray {
-  /*width: 2400px;*/
   height: 600px;
   position: relative;
 }
-
+  
 .slide {
   float: left;
   width: 800px;
