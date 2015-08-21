@@ -15,7 +15,7 @@ $(function(){
       slidePos = 0;
     }
     var distance = slidePos * slideWidth;
-    $(this).parent().find('.tray').animate({right: distance}, speed);
+    $('.tray').animate({right: distance}, speed);
   });
 
   $('.prev').click(function(event){
@@ -26,6 +26,6 @@ $(function(){
       slidePos = numOfSlides - 1;
     }
     var distance = slidePos * slideWidth;
-    $(this).parent().find('.tray').animate({right: distance}, speed);
+    $('.tray').animate({right: distance}, speed);
   });
 });
